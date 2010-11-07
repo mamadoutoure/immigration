@@ -1,0 +1,59 @@
+body {
+  font-family: sans-serif;
+  background: #e6f2ff;
+  margin: 0;
+
+}
+
+
+
+#content {
+  height: auto ;
+  background: #ffffff ;
+  padding: 1em;
+}
+
+#content h1 {
+  font-size: 18pt;
+}
+
+
+
+html fieldset{
+	position: relatives;
+	margin-top: 1em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+/* Form Styles */
+
+fieldset{
+	background:#22d7fd;
+}
+
+legend{
+	color: white;
+	font-weight: bold;
+	font-size: large;
+	background: c0c0c0;
+    padding: .4em 1em;
+	}
+	
+label {
+	width: 10em;
+	float: left;
+	text_align:right;
+	margin-rigt: 4em;
+	display: block;
+}
+
+.form_row{
+	white-space: nowrap;
+	padding-bottom: .5em;
+}
+
+.submit {
+	margin-left: 5.7em;
+}
+	

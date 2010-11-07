@@ -1,0 +1,1003 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (78.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (171.6ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20101106205822)
+  [4;35;1mSQL (79.0ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `email` varchar(255), `password` varchar(255), `sexe` varchar(255), `date_of_birth` date, `country_of_origin` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101106205822')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20101106205822)
+Migrating to UpdateUsers (20101106213422)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'immigrant_development.user' doesn't exist: SHOW FIELDS FROM `user`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20101106205822)
+Migrating to UpdateUsers (20101106213422)
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limite1 DEFAULT NULL' at line 1: ALTER TABLE `users` CHANGE `sexe` `sexe` limite1 DEFAULT NULL[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20101106205822)
+Migrating to UpdateUsers (20101106213422)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit1 DEFAULT NULL' at line 1: ALTER TABLE `users` CHANGE `sexe` `sexe` limit1 DEFAULT NULL[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20101106205822)
+Migrating to UpdateUsers (20101106213422)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (234.0ms)[0m   [0mALTER TABLE `users` CHANGE `sexe` `sexe` varchar(1) DEFAULT NULL[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101106213422')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+/!\ FAILSAFE /!\  Sat Nov 06 18:40:31 -0400 2010
+  Status: 500 Internal Server Error
+  Access denied for user 'root'@'localhost' (using password: NO)
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+    -e:2:in `load'
+    -e:2
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 18:42:08) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user/register
+ERROR: compiling _run_erb_app47views47user47register46html46erb RAISED compile error
+C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:8: syntax error, unexpected ')'
+...oncat(( form_for @user do |t|).to_s); @output_buffer.concat ...
+                              ^
+C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:31: syntax error, unexpected kENSURE, expecting ')'
+C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:33: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47user47register46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n"
+@output_buffer.concat "<html>\n"
+@output_buffer.concat "\t<head>\n"
+@output_buffer.concat "\t\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\" />\n"
+@output_buffer.concat "\t\t<title>User Registration</title>\n"
+@output_buffer.concat "\t</head>\n"
+@output_buffer.concat "\t<body>\n"
+@output_buffer.concat "\t\t"; @output_buffer.concat(( form_for @user do |t|).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.label :first_name ).to_s); @output_buffer.concat ":\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.text_field :first_name).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t  \n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.label :last_name ).to_s); @output_buffer.concat ":\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.text_field :last_name).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t  \n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.label :email ).to_s); @output_buffer.concat ":\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.email_field :email).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t  \n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.label :password ).to_s); @output_buffer.concat ":\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.password_field :first_name).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t  \n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.label :date_of_birth ).to_s); @output_buffer.concat ":\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.date_select :date_of_birth ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t  \n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.label :country_of_origin ).to_s); @output_buffer.concat ":\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.text_field :country_of_origin ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "\t</body>\n"
+@output_buffer.concat "</html>\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:33:in `compile!'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+-e:2:in `load'
+-e:2
+
+ActionView::TemplateError (compile error
+C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:8: syntax error, unexpected ')'
+...oncat(( form_for @user do |t|).to_s); @output_buffer.concat ...
+                              ^
+C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:31: syntax error, unexpected kENSURE, expecting ')'
+C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:33: syntax error, unexpected kEND, expecting ')') on line #8 of app/views/user/register.html.erb:
+5: 		<title>User Registration</title>
+6: 	</head>
+7: 	<body>
+8: 		<%= form_for @user do |t|%>
+9: 		
+10: 		  <%= t.label :first_name %>:
+11: 		  <%= t.text_field :first_name%>
+
+    app/views/user/register.html.erb:33:in `compile!'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 18:45:24) [GET]
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user/register
+ERROR: compiling _run_erb_app47views47user47register46html46erb RAISED compile error
+C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:8: syntax error, unexpected ')'
+...ncat(( form_for @user do |t| ).to_s); @output_buffer.concat ...
+                              ^
+C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:31: syntax error, unexpected kENSURE, expecting ')'
+C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:33: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47user47register46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n"
+@output_buffer.concat "<html>\n"
+@output_buffer.concat "\t<head>\n"
+@output_buffer.concat "\t\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\" />\n"
+@output_buffer.concat "\t\t<title>User Registration</title>\n"
+@output_buffer.concat "\t</head>\n"
+@output_buffer.concat "\t<body>\n"
+@output_buffer.concat "\t\t"; @output_buffer.concat(( form_for @user do |t| ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.label :first_name ).to_s); @output_buffer.concat ":\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.text_field :first_name).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t  \n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.label :last_name ).to_s); @output_buffer.concat ":\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.text_field :last_name ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t  \n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.label :email ).to_s); @output_buffer.concat ":\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.email_field :email ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t  \n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.label :password ).to_s); @output_buffer.concat ":\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.password_field :first_name ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t  \n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.label :date_of_birth ).to_s); @output_buffer.concat ":\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.date_select :date_of_birth ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t  \n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.label :country_of_origin ).to_s); @output_buffer.concat ":\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.text_field :country_of_origin ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "\t</body>\n"
+@output_buffer.concat "</html>\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:33:in `compile!'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+-e:2:in `load'
+-e:2
+
+ActionView::TemplateError (compile error
+C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:8: syntax error, unexpected ')'
+...ncat(( form_for @user do |t| ).to_s); @output_buffer.concat ...
+                              ^
+C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:31: syntax error, unexpected kENSURE, expecting ')'
+C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:33: syntax error, unexpected kEND, expecting ')') on line #8 of app/views/user/register.html.erb:
+5: 		<title>User Registration</title>
+6: 	</head>
+7: 	<body>
+8: 		<%= form_for @user do |t| %>
+9: 		
+10: 		  <%= t.label :first_name %>:
+11: 		  <%= t.text_field :first_name%>
+
+    app/views/user/register.html.erb:33:in `compile!'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (46.8ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 18:47:43) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user/register
+ERROR: compiling _run_erb_app47views47user47register46html46erb RAISED compile error
+C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:8: syntax error, unexpected ')'
+...at(( form_for (@user) do |t| ).to_s); @output_buffer.concat ...
+                              ^
+C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:31: syntax error, unexpected kENSURE, expecting ')'
+C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:33: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47user47register46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n"
+@output_buffer.concat "<html>\n"
+@output_buffer.concat "\t<head>\n"
+@output_buffer.concat "\t\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\" />\n"
+@output_buffer.concat "\t\t<title>User Registration</title>\n"
+@output_buffer.concat "\t</head>\n"
+@output_buffer.concat "\t<body>\n"
+@output_buffer.concat "\t\t"; @output_buffer.concat(( form_for (@user) do |t| ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.label :first_name ).to_s); @output_buffer.concat ":\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.text_field :first_name).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t  \n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.label :last_name ).to_s); @output_buffer.concat ":\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.text_field :last_name ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t  \n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.label :email ).to_s); @output_buffer.concat ":\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.email_field :email ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t  \n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.label :password ).to_s); @output_buffer.concat ":\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.password_field :first_name ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t  \n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.label :date_of_birth ).to_s); @output_buffer.concat ":\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.date_select :date_of_birth ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t  \n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.label :country_of_origin ).to_s); @output_buffer.concat ":\n"
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( t.text_field :country_of_origin ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "\t</body>\n"
+@output_buffer.concat "</html>\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:33:in `compile!'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+-e:2:in `load'
+-e:2
+
+ActionView::TemplateError (compile error
+C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:8: syntax error, unexpected ')'
+...at(( form_for (@user) do |t| ).to_s); @output_buffer.concat ...
+                              ^
+C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:31: syntax error, unexpected kENSURE, expecting ')'
+C:/Users/AWT/RubyProjects/immigrant/app/views/user/register.html.erb:33: syntax error, unexpected kEND, expecting ')') on line #8 of app/views/user/register.html.erb:
+5: 		<title>User Registration</title>
+6: 	</head>
+7: 	<body>
+8: 		<%= form_for (@user) do |t| %>
+9: 		
+10: 		  <%= t.label :first_name %>:
+11: 		  <%= t.text_field :first_name%>
+
+    app/views/user/register.html.erb:33:in `compile!'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 18:52:40) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user/register
+
+ActionView::TemplateError (undefined method `users_path' for #<ActionView::Base:0x57cb100>) on line #8 of app/views/user/register.html.erb:
+5: 		<title>User Registration</title>
+6: 	</head>
+7: 	<body>
+8: 		<% form_for @user do |t| %>
+9: 		
+10: 		  <%= t.label :first_name %>:
+11: 		  <%= t.text_field :first_name%>
+
+    app/views/user/register.html.erb:8
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 18:56:51) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user/register
+
+ActionView::TemplateError (undefined method `email_field' for #<ActionView::Helpers::FormBuilder:0x5713ba8>) on line #17 of app/views/user/register.html.erb:
+14: 		  <%= t.text_field :last_name %>
+15: 		  
+16: 		  <%= t.label :email %>:
+17: 		  <%= t.email_field :email %>
+18: 		  
+19: 		  <%= t.label :password %>:
+20: 		  <%= t.password_field :first_name %>
+
+    app/views/user/register.html.erb:17
+    app/views/user/register.html.erb:8
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (62.4ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 18:57:46) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user/register
+Completed in 411ms (View: 401, DB: 0) | 200 OK [http://localhost/user/register]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:01:53) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user/register
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/user/register]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:07:32) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user/register
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/user/register]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:19:53) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user/register
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/user/register]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:20:29) [GET]
+  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user/register
+Completed in 359ms (View: 343, DB: 16) | 200 OK [http://localhost/user/register]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:22:33) [GET]
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 78ms (View: 47, DB: 16) | 200 OK [http://localhost/user/register]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:24:49) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/user/register]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:25:08) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 38ms (View: 20, DB: 0) | 200 OK [http://localhost/user/register]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:25:26) [GET]
+  [4;36;1mUser Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 29ms (View: 10, DB: 10) | 200 OK [http://localhost/user/register]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:25:36) [GET]
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 36ms (View: 10, DB: 6) | 200 OK [http://localhost/user/register]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:26:08) [GET]
+  [4;36;1mUser Columns (16.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 26ms (View: 8, DB: 17) | 200 OK [http://localhost/user/register]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:26:36) [GET]
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 36ms (View: 10, DB: 2) | 200 OK [http://localhost/user/register]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:26:49) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 25ms (View: 20, DB: 0) | 200 OK [http://localhost/user/register]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:26:58) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 61ms (View: 46, DB: 0) | 200 OK [http://localhost/user/register]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:29:02) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/user/register]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:31:00) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 38ms (View: 20, DB: 0) | 200 OK [http://localhost/user/register]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:33:03) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/user/register]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:36:04) [GET]
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/user/register]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:37:35) [GET]
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 36ms (View: 12, DB: 6) | 200 OK [http://localhost/user/register]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:38:30) [GET]
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 36ms (View: 10, DB: 3) | 200 OK [http://localhost/user/register]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:40:58) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/user/register]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:42:11) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/user/register]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:42:34) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 24ms (View: 10, DB: 16) | 200 OK [http://localhost/user/register]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:53:46) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+
+ActionView::TemplateError (undefined method `radio_button_tag' for #<ActionView::Helpers::FormBuilder:0x596abd0>) on line #18 of app/views/user/register.html.erb:
+15: 		 
+16: 		 <div class="form_row">
+17: 		  <%= t.label :sexe %>:
+18: 		  <%= t.radio_button_tag:last_name %>
+19: 		 </div>
+20: 		 
+21: 		 <div class="form_row">
+
+    app/views/user/register.html.erb:18
+    app/views/user/register.html.erb:5
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:58:27) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/user/register]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 19:59:45) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 40ms (View: 20, DB: 0) | 200 OK [http://localhost/user/register]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 20:01:25) [GET]
+  [4;36;1mUser Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+
+ActionView::TemplateError (undefined method `select_date' for #<ActionView::Helpers::FormBuilder:0x597e7d8>) on line #34 of app/views/user/register.html.erb:
+31: 		
+32: 		 <div class="form_row">  
+33: 		  <%= t.label :date_of_birth %>:
+34: 		  <%= t.select_date :date_of_birth %>
+35: 		 </div>
+36: 		 
+37: 		 <div class="form_row">  
+
+    app/views/user/register.html.erb:34
+    app/views/user/register.html.erb:5
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (30.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 20:09:37) [GET]
+  [4;35;1mUser Columns (31.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 78ms (View: 47, DB: 31) | 200 OK [http://localhost/user/register]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 20:12:48) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+
+ActionView::TemplateError (undefined method `users_path' for #<ActionView::Base:0x5b15fb0>) on line #5 of app/views/user/register.html.erb:
+2: 	<fieldset>
+3: 		
+4: 		<legend>Fill your details</legend> 
+5: 		<% form_for @user do |t| %>
+6: 		  <div class="form_row">
+7: 		  <%= t.label :first_name %>:
+8: 		  <%= t.text_field :first_name%>
+
+    app/views/user/register.html.erb:5
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 20:13:22) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 43ms (View: 28, DB: 0) | 200 OK [http://localhost/user/register]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 20:14:12) [POST]
+  Parameters: {"user"=>{"date_of_birth(2i)"=>"12", "date_of_birth(3i)"=>"16", "country_of_origin"=>"Mauritania", "first_name"=>"mamadoutoure", "sexe"=>"M", "last_name"=>"Toure", "date_of_birth(1i)"=>"1970", "email"=>"mamadou_toure@yahoo.com"}, "commit"=>"Register", "authenticity_token"=>"t2nPW2DmG/IkUUDsyt2gb39uukWMfOmSivD3GJJgHBU="}
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 43ms (View: 28, DB: 0) | 200 OK [http://localhost/user/register]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 20:28:06) [GET]
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/user_controller.rb:4:in `params'
+  app/controllers/user_controller.rb:4:in `register'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (15.6ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 20:29:20) [GET]
+  [4;35;1mUser Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`updated_at`, `country_of_origin`, `first_name`, `date_of_birth`, `last_name`, `password`, `sexe`, `email`, `created_at`) VALUES('2010-11-07 00:29:20', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2010-11-07 00:29:20')[0m
+  [4;36;1mSQL (40.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 100ms (View: 30, DB: 50) | 200 OK [http://localhost/user/register]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 20:30:27) [POST]
+  Parameters: {"user"=>{"date_of_birth(2i)"=>"12", "date_of_birth(3i)"=>"16", "country_of_origin"=>"Mauritania", "first_name"=>"testest", "sexe"=>"M", "last_name"=>"Toure", "date_of_birth(1i)"=>"1970", "email"=>"mamadou_toure@yahoo.com"}, "commit"=>"Register", "authenticity_token"=>"t2nPW2DmG/IkUUDsyt2gb39uukWMfOmSivD3GJJgHBU="}
+  [4;35;1mUser Columns (24.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`updated_at`, `country_of_origin`, `first_name`, `date_of_birth`, `last_name`, `password`, `sexe`, `email`, `created_at`) VALUES('2010-11-07 00:30:27', 'Mauritania', 'testest', '1970-12-16', 'Toure', NULL, 'M', 'mamadou_toure@yahoo.com', '2010-11-07 00:30:27')[0m
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 141ms (View: 10, DB: 115) | 200 OK [http://localhost/user/register]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 20:57:01) [GET]
+  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO `users` (`updated_at`, `country_of_origin`, `first_name`, `date_of_birth`, `last_name`, `password`, `sexe`, `email`, `created_at`) VALUES('2010-11-07 00:57:01', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2010-11-07 00:57:01')[0m
+  [4;35;1mSQL (62.4ms)[0m   [0mCOMMIT[0m
+
+NoMethodError (undefined method `clear' for #<User:0x57da1a8>):
+  app/controllers/user_controller.rb:6:in `register'
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 20:58:03) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO `users` (`updated_at`, `country_of_origin`, `first_name`, `date_of_birth`, `last_name`, `password`, `sexe`, `email`, `created_at`) VALUES('2010-11-07 00:58:03', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2010-11-07 00:58:03')[0m
+  [4;35;1mSQL (62.4ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 484ms (View: 343, DB: 62) | 200 OK [http://localhost/user/register]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#register (for 127.0.0.1 at 2010-11-06 20:58:56) [POST]
+  Parameters: {"user"=>{"date_of_birth(2i)"=>"9", "date_of_birth(3i)"=>"7", "country_of_origin"=>"Senegal", "first_name"=>"Racine", "password"=>"Racwwde", "sexe"=>"M", "last_name"=>"Ba", "date_of_birth(1i)"=>"1989", "email"=>"g-cire@hotmail.com"}, "commit"=>"Register", "authenticity_token"=>"t2nPW2DmG/IkUUDsyt2gb39uukWMfOmSivD3GJJgHBU="}
+  [4;36;1mUser Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO `users` (`updated_at`, `country_of_origin`, `first_name`, `date_of_birth`, `last_name`, `password`, `sexe`, `email`, `created_at`) VALUES('2010-11-07 00:58:56', 'Senegal', 'Racine', '1989-09-07', 'Ba', 'Racwwde', 'M', 'g-cire@hotmail.com', '2010-11-07 00:58:56')[0m
+  [4;35;1mSQL (60.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/user
+Rendering user/register
+Completed in 126ms (View: 10, DB: 65) | 200 OK [http://localhost/user/register]
